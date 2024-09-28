@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <ul>
+            <li id="logo"><a href="{{ url_for('home') }}"><\nxco></a></li>
+            <div class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('contacts') }}">Contact</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <!-- Main Home Content -->
+    <div class="home_wrapper">
+        <!-- Introduction Section -->
+        <div class="box1">
+            <h1>Hello, I am Jerwin Nico!</h1>
+            <p>Welcome to my portfolio website. I am an aspiring web developer from Lucena City, passionate about creating beautiful and functional websites. Explore my work and feel free to get in touch!</p>
+            <a href="{{ url_for('projects') }}" class="button">View My Projects</a>
+        </div>
+
+        <!-- Highlight Section: Skills or Interests -->
+        <div class="box2">
+            <h2>What I Do</h2>
+            <ul>
+                <li>Front-End Development</li>
+                <li>Responsive Web Design</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python & Flask</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact: jerwinquijano19@example.com</p>
+    </footer>
+
+</body>
+</html>

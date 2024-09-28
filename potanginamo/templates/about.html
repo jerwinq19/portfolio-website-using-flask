@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   
+</head>
+<body>
+
+    <div class="topnav">
+        <ul>
+            <li id="logo"><a href="{{ url_for('home') }}"><\nxco></a></li>
+            <div class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('contacts') }}">Contact</a></li>
+            </div>
+        </ul>
+    </div>
+
+    <div class="about_me_wrapper">
+        <h1>About me</h1>
+        <div class="about_me">
+            <p>    
+                Hello! I’m Jerwin Nico Quijano, an aspiring web developer from Lucena City with a passion for bringing creative ideas to life through code. I’m currently focused on front-end development, specializing in HTML, CSS, JavaScript, and frameworks like Flask. My interest in web development began with a desire to understand how websites are built, and since then, I’ve been dedicated to mastering the skills needed to create responsive, user-friendly websites.
+            </p>
+
+            <p>
+                As I continue to learn and grow, I’m exploring more advanced topics such as web accessibility, performance optimization, and interactive design. I love diving into new technologies and frameworks, constantly challenging myself to build more efficient and visually engaging web solutions. One of my current projects is a portfolio website built with Flask, where I showcase my latest work and skill
+            </p>
+
+            <p>
+                Outside of coding, I enjoy experimenting with design tools like Figma, working on UI/UX concepts, and understanding how aesthetics impact user experience. My goal is to merge clean, modern design with functional code to deliver websites that not only look good but perform well.
+            </p>
+
+            <p>
+                I’m always open to learning from others, collaborating on exciting projects, or just connecting with like-minded developers. Feel free to explore my projects and get in touch if you’d like to collaborate or have any opportunities in web development!
+            </p>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>Contact: jerwinquijano19@example.com</p>
+    </footer>
+
+</body>
+</html>

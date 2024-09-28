@@ -1,29 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 body {
     margin: 0;
     box-sizing: border-box;
     background-color: #323232;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .topnav {
     background-color: #CADD57;
     color: #323232;
-    display: flex;
-    align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1rem;
 }
 
 .topnav ul {
     display: flex;
-    flex-direction: row; 
-    padding: 1rem; /* Remove default padding from ul */
-    margin: 0;  /* Remove default margin from ul */
-    gap: 20px;
+    justify-content: space-between; /* Spread logo and nav links */
+    align-items: center; /* Align vertically */
+    padding: 1rem;
+    margin: 0;
+}
+
+#logo {
+    margin-right: auto; /* Ensure logo stays on the left */
+    font-weight: bold;
+}
+#logo a {
+    text-decoration: none;
+    color: #323232;
+}
+
+#logo a:hover {
+    color: #CADD57;
+    background-color: #323232;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Space between nav buttons */
 }
 
 .topnav ul li {
-    text-decoration: none;
     list-style-type: none; /* Remove bullet points */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #323232;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: #323232;
+    color: #CADD57;
 }
 
 section {
@@ -33,4 +66,145 @@ section {
     color: #323232;
     background-color: #CADD57;
     border-radius: 2rem;
+    flex: 1; /* This allows the section to take up available space */
+}
+
+footer {
+    text-align: center;
+    background-color: #CADD57;
+    color: #323232;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: auto; /* This pushes the footer to the bottom */
+}
+
+.about_me_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 50px;
+}
+
+.about_me_wrapper h1 {
+    font-family: "Lato";
+    color: #CADD57;
+}
+
+.about_me {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    background-color: #CADD57;
+    color: #323232;
+    padding: 20px 50px;
+    border-radius: 20px;
+    font-family: "Lato";
+    font-size: 1.1em;
+}
+
+.home_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    font-family: "Lato";
+}
+
+.box1, .box2 {
+    background-color: #CADD57;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 45%;
+    height: 45vh;
+}
+
+
+.box1 h1 {
+    margin-top: 0px;
+    font-size: 3rem;
+}
+.box1 p {
+    margin-bottom: 3.5rem;
+    font-size: 25px;
+}
+
+.button {
+    background-color: #323232;
+    color: #CADD57;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 2000px;
+    font: 18px;
+}
+
+.button:hover {
+    background-color: #CADD57;
+    color: #323232;
+    border: 2px #323232 solid;
+}
+
+.box2 h2 {
+    font-size: 3rem;
+    margin-top: 0px;
+}
+
+.box2 ul, li{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.about_me_wrapper p {
+    font-family: "Lato";
+    font-size: 1.3rem;
+}
+
+.contact_me{
+    background-color: #CADD57;
+    color: #323232;
+    padding: 2rem 2rem;
+    font-family: "Lato";
+    border-radius: 2rem;
+    flex: 1;
+}
+
+.contact_me div {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+
+.contact_me label, input {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact_me input ,textarea{
+    background-color: #E0DDD6;
+    color: #323232;
+    border: none;
+}
+
+.contact_me textarea {
+    min-height:10rem;
+    font-size: 1.5rem;
+}
+
+.contact_me button {
+    background-color: #E0DDD6;
+    color: #323232;
+    padding: 0.5rem 1rem;
+    font-family: "Lato";
+    font-size: 1rem;
+    border: none;
+}
+
+.contact_me button:hover {
+    background-color: #323232;
+    color: #CADD57;
+    background-color: 2px #323232 solid;
 }
