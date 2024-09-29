@@ -14,13 +14,15 @@ body {
     color: #323232;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1rem;
+    padding: 0px;
 }
 
 .topnav ul {
     display: flex;
     justify-content: space-between; /* Spread logo and nav links */
     align-items: center; /* Align vertically */
-    padding: 1rem;
+    padding: 0.5rem 2rem;
+    margin-top: 0;
     margin: 0;
 }
 
@@ -59,15 +61,49 @@ body {
     color: #CADD57;
 }
 
+
+.projects_wrapper {
+    display: flex;
+    align-items: center ;
+    flex-direction: row;
+    min-width: 100%;
+}
+
+#projects{
+    font-family: "Lato";
+    color:#323232;
+    overflow: auto;
+}
+
+#projects li, p{
+    font-size: 1rem;
+}
+
+#projects #title {
+    margin-right: auto;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+
+
 section {
-    height: 50vh;
-    margin: 20px 50px;
+    height: 75vh;
+    margin: 10px 10px;
     padding: 1rem 20px;
     color: #323232;
     background-color: #CADD57;
     border-radius: 2rem;
     flex: 1; /* This allows the section to take up available space */
 }
+
+
 
 footer {
     text-align: center;
@@ -139,8 +175,7 @@ footer {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 10px;
-    margin-top: 2000px;
-    font: 18px;
+    font-size: 100%;
 }
 
 .button:hover {
